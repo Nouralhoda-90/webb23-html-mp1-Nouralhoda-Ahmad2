@@ -1,0 +1,257 @@
+¨
+body{
+    
+    font-family: sans-serif;
+}
+
+  *{
+    padding: 0;                           
+    margin: 0%;                                   
+    box-sizing: border-box;
+    background-color: rgb(23, 23, 14); 
+    scroll-behavior: smooth;}     /*smothly scroll the page */
+ /* All elements has this properties, box-sizing: child elemnt inside parenet element*/
+    
+
+
+
+.container{
+    
+    margin: auto;
+   overflow: hidden;  /* The overflow is clipped, and the rest of the content will be invisible.  */
+
+    font-weight: 700;
+  font-size: 1.8em; /*font-size has not been set on my body then 1em will equal the default browser font-size, which is usually 16px */
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+header{
+    
+    font-size: small;
+    min-height: 1cm;
+    border-bottom: #b05757 2px solid;
+     z-index: 999;      /*the header will never disappear */
+     align-items: center;    /* all header`items position in the center*/ 
+    width: 100%;
+     padding: 10 200px;   /* space between contents in header. padding top,bottom 10=px padding left, right=200px */
+    position: fixed;     /* the header line will be fixed if we scroll up and down */
+
+    }
+    /* header: in the top has these specific properties  */
+  
+
+
+
+
+
+
+
+nav a{ 
+     color: rgb(146, 146, 223);     /*links color */
+     text-decoration: none;  /*to remove the line under the links */
+    text-transform: uppercase;  /*all links has capitals letters */
+     
+}
+
+
+nav li{
+   
+    display:inline;   /*to make all links inline not as a list one under the other */
+   padding: 0 20px 0 20px;    /*space between them */
+   
+
+}
+
+
+
+header #personal h1{
+    margin: 0%;
+    color: rgb(170, 51, 8);
+    font-weight: 800 ;
+   float: left  /* Im Nouralhoda is on top the left og the header */
+}
+
+nav{
+   
+    float: right;
+    margin-top: 30px;
+    padding-right: 10px;
+    font-size: 0.5em;
+}
+
+
+nav a:hover{
+    color: blueviolet;
+    font-weight: bold;  /*when we mouse the links the font and the color will change  */
+}
+
+section{
+    margin: 10px;
+    padding: 100px;   /*the content under head line has this position     */
+    align-content: center;
+    align-items: center;
+}
+
+.main{
+    width: 100%;
+     min-height: 100vh; /*The div will fill 100% of the viewport's height */
+    display: flex;
+    align-items: center;
+    margin-right: 50%;
+    
+  
+}
+
+div h2{
+    color: rgb(53, 117, 111);
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.main span{
+   
+    margin-top: 5px;
+color: rgb(38, 133, 103);
+font-size: 2em;
+font-weight: 600;
+
+
+}
+
+.main p{
+    color: rgb(162, 154, 8);
+    font-size: 1.1em;
+    font-weight: 700;
+    letter-spacing: 1px;
+   
+}
+
+
+ div #image{
+    width: 350px;
+    height:350px;
+   padding: 0%;
+   margin-top: 500xp;
+   
+   
+
+  
+}
+
+
+
+
+
+.fakta{
+  
+    color: rgb(6, 208, 201);
+    font-size: 1.1em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-left: 2px;
+    margin-bottom: 20px;
+}
+
+  a {
+    color: rgb(146, 146, 223);
+    text-transform: uppercase;
+
+}
+ aside a:hover{color: blueviolet;
+    font-weight: bold;
+
+}
+ol{padding-left: 20px;
+    color: aqua;
+}
+#health{margin-top: 30px;}
+
+
+   
+form{
+     color: rgb(245, 221, 40); /* contact information  */
+}
+
+input{background-color: rgb(212, 243, 243);
+    
+
+}
+
+
+textarea{
+    color: aquamarine;
+}
+
+button{
+background-color: blueviolet;
+
+}
+
+ footer{
+    min-height: 1cm;
+    border-top: #b05757 2px solid;
+    margin-top: 50px;
+    z-index: 999;
+    align-items: center;
+    width: 100%;
+    padding: 10 200px;
+}
+footer >p {
+   margin-top: 40px;
+    color: blue;
+}
+
+footer a {
+    margin-right: 7px;   /* socialmedia links have this properties*/
+   padding:6px;
+    font-size: 1.7em;
+   
+    float: right;  /*links position */
+    margin-bottom: 60px;
+} 
+
+
+
+ @media (max-width: 1023px){   /* when the width < 1023 then header, nav, title and section will take this properties.   */
+    header {  padding: 12px 20px;
+
+    }
+
+    .nav{padding-left: 10px;
+        
+
+    }
+
+    .title{font-size: 1.8em;}
+
+    section{ padding: 80px 20px;}
+}
+@media(max-width:641px){       /* when the width > 641 then body, h2, tand h3 will take this properties.   */
+    body{font-size: 12px;
+
+    }
+    .main-content h2{
+        font-size: 1.4em;
+    }
+    .main-contet h3{font-size: 1.4em;}
+}
+@media(max-width:300px){
+    body{font-size: 10px;}
+}
+
+
+
+
+
+
+
+
+
+
+
